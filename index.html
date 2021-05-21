@@ -6,200 +6,347 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+			* {box-sizing: border-box}
+			body {font-family: Verdana, sans-serif; margin:0}
+			.mySlides {display: none}
+			img {vertical-align: middle;}
+
+			/* Slideshow container */
+			.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: auto;
+			}
+
+			/* Next & previous buttons */
+			.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+			background-color: rgba(0,0,0,0.8);
+			}
+
+			/* Caption text */
+			.text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+			}
+
+			/* The dots/bullets/indicators */
+			.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 8px 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+			}
+
+			.active, .dot:hover {
+			background-color: #717171;
+			}
+
+			/* Fading animation */
+			.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+			}
+
+			@-webkit-keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+			}
+
+			@keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+			}
+
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+			.prev, .next,.text {font-size: 11px}
+			}
+		</style>
+	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Alexis Serna</strong> - Game Programmer Portfolio</a>
-									<ul class="icons">
-										<li><a href="mailto: 7319aserna@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Envelope</span></a></li>
-										<li><a href="https://github.com/ASGitH" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="https://www.linkedin.com/in/alexisserna/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://twitter.com/ASGDTweet" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									</ul>
-								</header>
+					<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Alexis Serna</strong> - Game Programmer Portfolio</a>
+						<ul class="icons">
+							<li><a href="mailto: 7319aserna@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Envelope</span></a></li>
+							<li><a href="https://github.com/ASGitH" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/alexisserna/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://twitter.com/ASGDTweet" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+						</ul>
+					</header>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Howdy, I’m Alexis!</h1>
-											<h3>Game Developer, always looking to help out and learn whenever / wherever I can. (C / C++ / C#) (GameBoy / Unity)</h3>
-										</header>
-										<p> Unity and Game Boy-related projects are my game, and I'm currently living in Seattle, Washington. I obtained my <b>Advanced Diploma of Professional Game Development Specializing in Game Programming at the Academy of Interactive Entertainment in Seattle, Washington in 2020</b>. The projects displayed I've had the pleasure and opportunity of making and/or contributing to. I love brainstorming new game concepts and prototyping them out in Unity or using the Game Boy Development Kit. My main platform of choice to develop is for the Game Boy, as these games are often smaller, it not only requires me to <b>work outside the box but also with the limitations given</b>. I have a strong determination for learning and taking on new challenges, and I always like to <b>build on my creations, to see my project grow, and use what I have learned, in the best way possible</b>. I'm looking for <b>remote work on Unity-related projects or Game Boy projects</b> if possible and of course, if you have any questions please feel free to contact me using any of my <b>social links</b>! :)</p>
-										<ul class="actions">
-											<li><a href="https://resume.creddle.io/resume/ivtpasnjeks" class="button big">Download Resume</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/pic12.jpg" alt="" />
-									</span>
-								</section>
-							
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>What's New?</h2>
-									</header>
-									<article class="post featured">
-										<a href="#" class="image main"><img src="images/dFTR.png" alt="" /></a>
-										<ul class="actions special">
-											<li><a href="#" class="button large">Learn More</a></li>
-										</ul>
-									</article>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ipsum sed dolor</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Interdum aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
-
+					<!-- Banner -->
+					<section id="banner">
+						<div class="content">
+							<header>
+								<h1>Howdy, I’m Alexis!</h1>
+								<h3>Game Developer, always looking to help out and learn whenever / wherever I can. (C / C++ / C#) (GameBoy / Unity)</h3>
+							</header>
+							<p> Unity and Game Boy-related projects are my game, and I'm currently living in Seattle, Washington. I obtained my <b>Advanced Diploma of Professional Game Development Specializing in Game Programming at the Academy of Interactive Entertainment in Seattle, Washington in 2020</b>. The projects displayed I've had the pleasure and opportunity of making and/or contributing to. I love brainstorming new game concepts and prototyping them out in Unity or using the Game Boy Development Kit. My main platform of choice to develop is for the Game Boy, as these games are often smaller, it not only requires me to <b>work outside the box but also with the limitations given</b>. I have a strong determination for learning and taking on new challenges, and I always like to <b>build on my creations, to see my project grow, and use what I have learned, in the best way possible</b>. I'm looking for <b>remote work on Unity-related projects or Game Boy projects</b> if possible and of course, if you have any questions please feel free to contact me using any of my <b>social links</b>! :)</p>
+							<ul class="actions">
+								<li><a href="https://resume.creddle.io/resume/ivtpasnjeks" class="button big">Download Resume</a></li>
+							</ul>
 						</div>
-					</div>
+						<span class="image object">
+							<img src="images/pic12.jpg" alt="" />
+						</span>
+					</section>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>What's New?</h2>
+						</header>
+						
+						<div class="slideshow-container">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
-
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-
+						<div class="mySlides fade">
+							<img src="images/track.jpg" style="width:100%">
+							<!-- <div class="text">Caption Text</div> -->
 						</div>
-					</div>
 
+						<div class="mySlides fade">
+							<img src="images/vehicle.jpg" style="width:100%">
+							<!-- <div class="text">Caption Two</div> -->
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+						</div>
+
+						<article class="post featured">
+							<span class="date">April 14th, 2021</span>
+							<h3>dFTR - Unity!</h3>
+							<p>Check out these great voxel models for my project! Love the voxel art style, models were created with MagicaVoxel. My current plan is to set the scale for the player and track, then to test out the movement with said changes.</p>
+							<ul class="actions special">
+								<li><a href="#" class="button large">Learn More</a></li>
+							</ul>
+						</article>
+
+						<script>
+						var slideIndex = 1;
+						showSlides(slideIndex);
+
+						function plusSlides(n) {
+							showSlides(slideIndex += n);
+						}
+
+						function currentSlide(n) {
+							showSlides(slideIndex = n);
+						}
+
+						function showSlides(n) {
+							var i;
+							var slides = document.getElementsByClassName("mySlides");
+							var dots = document.getElementsByClassName("dot");
+							if (n > slides.length) {slideIndex = 1}
+							if (n < 1) {slideIndex = slides.length}
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";
+							}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex-1].style.display = "block";
+							dots[slideIndex-1].className += " active";
+						}
+						</script>
+					</section>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>Ipsum sed dolor</h2>
+						</header>
+						<div class="posts">
+							<article>
+								<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+								<h3>Interdum aenean</h3>
+								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+								<h3>Nulla amet dolore</h3>
+								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+								<h3>Tempus ullamcorper</h3>
+								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+								<h3>Sed etiam facilis</h3>
+								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</article>
+						</div>
+					</section>
+
+				</div>
 			</div>
 
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+
+					<!-- Search -->
+					<section id="search" class="alt">
+						<form method="post" action="#">
+							<input type="text" name="query" id="query" placeholder="Search" />
+						</form>
+					</section>
+
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="index.html">Homepage</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+							<li>
+								<span class="opener">Submenu</span>
+								<ul>
+									<li><a href="#">Lorem Dolor</a></li>
+									<li><a href="#">Ipsum Adipiscing</a></li>
+									<li><a href="#">Tempus Magna</a></li>
+									<li><a href="#">Feugiat Veroeros</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Etiam Dolore</a></li>
+							<li><a href="#">Adipiscing</a></li>
+							<li>
+								<span class="opener">Another Submenu</span>
+								<ul>
+									<li><a href="#">Lorem Dolor</a></li>
+									<li><a href="#">Ipsum Adipiscing</a></li>
+									<li><a href="#">Tempus Magna</a></li>
+									<li><a href="#">Feugiat Veroeros</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Maximus Erat</a></li>
+							<li><a href="#">Sapien Mauris</a></li>
+							<li><a href="#">Amet Lacinia</a></li>
+						</ul>
+					</nav>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>Ante interdum</h2>
+						</header>
+						<div class="mini-posts">
+							<article>
+								<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="#" class="button">More</a></li>
+						</ul>
+					</section>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>Get in touch</h2>
+						</header>
+						<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+						<ul class="contact">
+							<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+							<li class="icon solid fa-phone">(000) 000-0000</li>
+							<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+							Nashville, TN 00000-0000</li>
+						</ul>
+					</section>
+
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+				</div>
+			</div>
+		</div>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
