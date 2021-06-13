@@ -127,20 +127,21 @@
 					<!-- Content -->
 					<section>
 						<header class="main">
-							<h1>Retro Jam 2021</h1>
+							<h1>Rolling On</h1>
 						</header>
 
 						<!--                            controls (here below) v -->
 						<video style="width:100%;" height="100%" autoplay muted loop>
-							<source src="videos/retro-jam-2021.mp4" type="video/mp4">
+							<source src="videos/rolling-on.mp4" type="video/mp4">
 						</video>
 
-						<p>Within a <b>span of a week</b>, my task was to <b>take a game and redesign it for a retro console</b>. One of the first ideas that came to my head was to <b>"demake" the Sega Genesis title Bonanza Bros.™ </b> Of course, it did come with its set of challenges. But the one thing I am proud of learning within that week was <b>messing around, and creating something with the artificial intelligence</b>.</p>
+						<p>"We hit a bunch of <b>memory issues</b> which resulted in frantic ripping out and putting back in of a lot, so ended up with a <b>good bit of stuff that barely didn't make it in</b>. All in all really <b>fun jam</b>!" - <a href="https://twitter.com/mattmccordmattm">Matt McCord</a> (Art, Design, Music & Related Programming) </p>
+						<p>This project marked the first time I have had the chance, <b>to work along side someone else to create a Game Boy project</b>. This <a href="https://globalgamejam.org/2021/games/skate-or-cry-5">Global Game Jam</a> project, I was tasked of handling most of the <b>game programming</b>. In this page, you will get to take a look at some of <b>my contributations to this project</b>!</p>
 
 						<hr class="major" />
 
 						<header class="major">
-							<h2>Recent Updates</h2>
+							<h2>Contributations</h2>
 						</header>
 						
 						<!-- Section -->
@@ -148,15 +149,15 @@
 							<div class="container">
 								<div class="row gtr-150">
 									<div class="col-6 col-12-medium imp-medium">
-										<!-- Image -->
-										<img src="images/retro-jam-2021-march-12th.png" style="width:100%">
+										<!-- Video -->
+										<video style="width:100%;" height="100%" muted controls loop>
+											<source src="videos/rolling-on-01.mp4" type="video/mp4">
+										</video>
 									</div>
 									<div class="col-6 col-12-medium">
-										<span class="date"><b>March 12th, 2021</b></span>
+										<span class="date"><b>January 29th, 2021</b></span>
 										<ul>
-											<li>The finishing touches, the player can shoot, look at him go!</li> 
-											<li>Logic was created in order to handle the animation changes when the player's state changed (example: jumping -> moving, moving -> shooting and vice versa).</li>
-											<li>Artificial Intelligence was created for the guard. They will turn left/right and if the player is in view, they will move towards them.</li>
+											<li>Scene management - being able to keep track of the player and handling certain events at certain points during the game. Handling the scrolling background and display the correct area at the current moment.</li> 
 										</ul>
 									</div>
 								</div>
@@ -168,33 +169,14 @@
 							<div class="container">
 								<div class="row gtr-150">
 									<div class="col-6 col-12-medium imp-medium">
-										<!-- Video -->
-										<video style="width:100%;" height="100%" muted controls loop>
-											<source src="videos/retro-jam-2021-march-8th.mp4" type="video/mp4">
-										</video>
-									</div>
-									<div class="col-6 col-12-medium">
-										<span class="date"><b>March 8th, 2021</b></span>
-										<ul>
-											<li>Creation of the guard. Using the <a href="https://github.com/gbdk-2020/GBTD_GBMB">Game Boy Tile Designer</a>, each sprite which are 8x8 pixels are created. Then they are combined together in order to create a bigger sprite, or meta-sprite in this case.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</section>
-
-						<!-- Section -->
-						<section id="three" class="main style1">
-							<div class="container">
-								<div class="row gtr-150">
-									<div class="col-6 col-12-medium imp-medium">
 										<!-- Image -->
-										<img src="images/retro-jam-2021-march-4th.png" style="width:100%">
+										<img src="images/rolling-on-02.png" style="width:100%">
 									</div>
 									<div class="col-6 col-12-medium">
-										<span class="date"><b>March 4th, 2021</b></span>
+										<span class="date"><b>January 28th, 2021</b></span>
 										<ul>
-											<li>The player has been created using 4 sprites, thus, turing into a meta-sprite. When the player moves for example, each individual sprite will have to be moved at the same time.</li>
+											<li>Player controller - movement, jumping, keeping track of it's position currently and, handling it's states of animation.</li>
+											<li>Player is a meta-sprite which was created with six sprites. Each sprite is moving at the same time, and each will change when jumping, and moving.</li>
 										</ul>
 									</div>
 								</div>
@@ -207,21 +189,32 @@
 							<h2>More Information</h2>
 						</header>
 
+						<h3>Credits</h3>
+
+						<p>Alexis Serna - <b>Design & Game Programming</b></p>
+						<p>Matt McCord - <b>Art, Design, Music & Related Programming</b></p>
+						<ul>
+							<li class="icon brands style2 fa-github"><a href="https://github.com/mccordgh"> mccordgh</a></li>
+							<li class="icon brands style2 fa-linkedin"><a href="https://www.linkedin.com/in/mccordinator"> Matthew McCord</a></li>
+							<li class="icon brands style2 fa-twitter"><a href="https://twitter.com/mattmccordmattm"> Matt “MCCORDINATOR” McCord</a></li>
+						</ul>
+
 						<h3>Download</h3>
 
-						<p>retro-jam-2021.gb <b>32 KB</b></p>
+						<p>rolling-on.gb <b>32 KB</b></p>
 
 						<ul class="actions">
-							<li><a href="https://github.com/ASGitH/game-Boy-Retro-Jam-2021/releases/download/build-00/retro-jam-2021.gb" class="button">Download</a></li>
+							<li><a href="https://github.com/Global-Game-Jam-2020-team/ggj_2020_gameboy_platformer/releases/download/build-00/rolling_on.gb" class="button">Download</a></li>
 						</ul>
 
 						<h3>Installation Instructions</h3>
 						<p>Grab a <b>Game Boy emulator</b> if you don't have one (<b><a href="http://bgb.bircd.org/">bgb</a></b> is a great emulator to use!). <b>Download the .gb file</b>, and load it in to your GameBoy emulator.</p>
 
 						<h3>Repository Link</h3>
-						<p><a href="https://github.com/ASGitH/game-Boy-Retro-Jam-2021">https://github.com/ASGitH/game-Boy-Retro-Jam-2021</a></p>
+						<p><a href="https://github.com/Global-Game-Jam-2020-team/ggj_2020_gameboy_platformer">https://github.com/Global-Game-Jam-2020-team/ggj_2020_gameboy_platformer</a></p>
 
 						<h3>Tools Used</h3>
+						<p>Audio/Tracker - <a href="https://openmpt.org/">OpenMPT</a></p>
 						<p>Backgrounds/Sprites/Tiles - <a href="https://github.com/gbdk-2020/GBTD_GBMB">Game Boy Map Builder & Game Boy Tile Designer</a></p>
 						<p>Developer Kit - <a href="https://github.com/gbdk-2020/gbdk-2020">Game Boy Development Kit</a></p>
 						<p>Emulator - <a href="http://bgb.bircd.org/">BGB GameBoy Emulator</a></p>
@@ -237,17 +230,17 @@
 							<div class="slideshow-container">
 
 							<div class="mySlides fade">
-								<img src="images/retro-jam-2021.png" style="width:100%">
+								<img src="images/rolling-on.png" style="width:100%">
 								<!-- <div class="text">Caption Two</div> -->
 							</div>
 
 							<div class="mySlides fade">
-								<img src="images/retro-jam-2021-01.png" style="width:100%">
+								<img src="images/rolling-on-01.png" style="width:100%">
 								<!-- <div class="text">Caption Two</div> -->
 							</div>
 
 							<div class="mySlides fade">
-								<img src="images/retro-jam-2021-02.png" style="width:100%">
+								<img src="images/rolling-on-02.png" style="width:100%">
 								<!-- <div class="text">Caption Two</div> -->
 							</div>
 
@@ -296,21 +289,15 @@
 							<h2>History</h2>
 						</header>
 
-						<span class="date"><b>March 12th, 2021</b></span>
+						<span class="date"><b>January 29th, 2021</b></span>
 						<ul>
-							<li>The finishing touches, the player can shoot, look at him go!</li> 
-							<li>Logic was created in order to handle the animation changes when the player's state changed (example: jumping -> moving, moving -> shooting and vice versa).</li>
-							<li>Artificial Intelligence was created for the guard. They will turn left/right and if the player is in view, they will move towards them.</li>
+							<li>Scene management - being able to keep track of the player and handling certain events at certain points during the game. Handling the scrolling background and display the correct area at the current moment.</li>
 						</ul>
 						
-						<span class="date"><b>March 8th, 2021</b></span>
+						<span class="date"><b>January 28th, 2021</b></span>
 						<ul>
-							<li>Creation of the guard. Using the <a href="https://github.com/gbdk-2020/GBTD_GBMB">Game Boy Tile Designer</a>, each sprite which are 8x8 pixels are created. Then they are combined together in order to create a bigger sprite, or meta-sprite in this case.</li>
-						</ul>
-
-						<span class="date"><b>March 4th, 2021</b></span>
-						<ul>
-							<li>The player has been created using 4 sprites, thus, turing into a meta-sprite. When the player moves for example, each individual sprite will have to be moved at the same time.</li>
+							<li>Player controller - movement, jumping, keeping track of it's position currently and, handling it's states of animation.</li>
+							<li>Player is a meta-sprite which was created with six sprites. Each sprite is moving at the same time, and each will change when jumping, and moving.</li>
 						</ul>
 
 					</section>
