@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Game Boy - Main Page</title>
+		<title>AIE - The Faded Grove</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -105,7 +105,7 @@
 	</head>
 
 	<body class="is-preload">
-
+		
 		<!-- Wrapper -->
 		<div id="wrapper">
 
@@ -127,33 +127,114 @@
 					<!-- Content -->
 					<section>
 						<header class="main">
-							<h1>Game Boy Projects</h1>
+							<h1>The Faded Grove</h1>
 						</header>
 
-						<!--                            controls (here below) v -->
-						<video style="width:100%;" height="475" autoplay muted loop>
-							<source src="videos/game-boy/game-boy-main-video.mp4" type="video/mp4">
-						</video>
+						<iframe width="100%" height="534" src="https://www.youtube.com/embed/2J8esEJj5T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-						<p>Welcome to the <b>Game Boy projects main page</b>! I started programming / making Game Boy games when I was attending the <b>Academy of Interactive Entertainment in 2018</b>. At some point during that time, we were allowed to explore and create anything to our hearts content. It reminded me of my youth and my <b>first handheld was the Game Boy</b>. I still remember firing up <b>Super Mario Land</b> and absolutley loving it. This passion led me to <b>experiment and create games, projects, and prototypes</b>.</p>
+						<p>The final project I have gotten to work on from my enrollment at the Academy of Interactive Entertainment. What a journey it has been, when I've started out at AIE, I had almost no knowledge in coding/programming. I knew it was gonna be an uphill battle from the start, there were times where I was near the edge of not comp</p>
+
+						<hr class="major">
+
+						<header class="major">
+							<h2>Recent Updates</h2>
+						</header>
+						
+						<!-- Section -->
+						<section id="one" class="main style1">
+							<div class="container">
+								<div class="row gtr-150">
+									<div class="col-6 col-12-medium imp-medium">
+										<!-- Image -->
+										<img src="images/aie/artificial-intelligence-for-games.png" style="width:100%">
+										<img src="images/aie/artificial-intelligence-for-games-01.png" style="width:100%">
+									</div>
+									<div class="col-6 col-12-medium">
+										<span class="date"><b>May 23rd, 2019</b></span>
+										<ul>
+											<li>Implemented an instance of pathfinding that will a raycast a point (red node) selected based on the mouse cursor.</li>
+											<li>Once a point has been chosen, this would create nodes around the object until a node reaches the selected target.</li>
+											<li>Afterwards, the node closest to the object would go through and figure out which node next to it, is the closest to the target.</li>
+											<li>The next node chosen would repeat the process while recording each node selected before, onto a list to be the path the object follows afterwards (nodes highlighted in blue).</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- Section -->
+						<section id="two" class="main style1">
+							<div class="container">
+								<div class="row gtr-150">
+									<div class="col-6 col-12-medium imp-medium">
+										<!-- Video -->
+										<video style="width:100%;" height="100%" muted controls loop>
+											<source src="videos/aie/artificial-intelligence-for-games-01.mp4" type="video/mp4">
+										</video>
+									</div>
+									<div class="col-6 col-12-medium">
+										<span class="date"><b>May 20th, 2019</b></span>
+										<ul>
+											<li>An AI agent created can have different steering behaviors (flee/pursue/wander).</li>
+											<li>The flee and pursue agents can flee/pursue the pathfinding AI, or eachother.</li>
+											<li>These steering behaviors (expect the wandering behavior), would only be activated when the target is in the area.</li>
+											<li>If the target is not in the area, the agents would default back to their wandering behavior.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
 
 						<hr class="major" />
 
 						<header class="major">
-							<h2>What's New?</h2>
+							<h2>More Information</h2>
 						</header>
-						
+
+						<h3>Download</h3>
+
+						<p>artificial-intelligence-for-games.zip <b>22.0 MB</b></p>
+
+						<ul class="actions">
+							<li><a href="https://github.com/ASGitH/aie-Artificial-Intelligence-For-Games/releases/download/build-00/artificial-intelligence-for-games.zip" class="button">Download</a></li>
+						</ul>
+
+						<h3>Installation Instructions</h3>
+						<p>Download the .zip folder and <b>extract it. Launch the executable</b> (.exe).</p>
+
+						<h3>Repository Link</h3>
+						<p><a href="https://github.com/ASGitH/aie-Artificial-Intelligence-For-Games">https://github.com/ASGitH/aie-Artificial-Intelligence-For-Games</a></p>
+
+						<h3>Tools Used</h3>
+						<p>Game Engine - <a href="https://unity.com">Unity Game Engine</a></p>
+
+						<hr class="major" />
+
+						<header class="major">
+							<h2>Screenshots</h2>
+						</header>
+
 						<!-- Section -->
 						<section>
 							<div class="slideshow-container">
 
 							<div class="mySlides fade">
-								<img src="images/game-boy/action-adventure-template-02.png" style="width:100%">
-								<!-- <div class="text">Caption Text</div> -->
+								<img src="images/aie/artificial-intelligence-for-games.png" style="width:100%">
+								<!-- <div class="text">Caption Two</div> -->
 							</div>
 
 							<div class="mySlides fade">
-								<img src="images/game-boy/action-adventure-template-03.png" style="width:100%">
+								<img src="images/aie/artificial-intelligence-for-games-01.png" style="width:100%">
+								<!-- <div class="text">Caption Two</div> -->
+							</div>
+							
+							<div class="mySlides fade">
+								<img src="images/aie/artificial-intelligence-for-games-02.png" style="width:100%">
+								<!-- <div class="text">Caption Two</div> -->
+							</div>
+
+							<div class="mySlides fade">
+								<img src="images/aie/artificial-intelligence-for-games-03.png" style="width:100%">
 								<!-- <div class="text">Caption Two</div> -->
 							</div>
 
@@ -163,6 +244,8 @@
 							<div style="text-align:center">
 								<span class="dot" onclick="currentSlide(1)"></span>
 								<span class="dot" onclick="currentSlide(2)"></span>
+								<span class="dot" onclick="currentSlide(3)"></span>
+								<span class="dot" onclick="currentSlide(4)"></span>
 							</div>
 
 							<script>
@@ -195,48 +278,28 @@
 							</script>
 						</section>
 
-						<span class="date">April 22th, 2021</span>
-						<h3>Action Adventure Template</h3>
-						<p>Collision has been set up but, it's still a bit finicky. If you collide and try to change direction, you will end up getting stuck. My goal...</p>
-						<ul class="actions special">
-							<li><a href="game-boy-action-adventure-template-page.html" class="button large">Read More</a></li>
-						</ul>
-					</section>
+						<hr class="major" />
 
-					<!-- Section -->
-					<section>
 						<header class="major">
-							<h2>Projects</h2>
+							<h2>History</h2>
 						</header>
-						<div class="posts">
-							<article>
-								<a href="game-boy-action-adventure-template-page.html" class="image"><img src="images/game-boy/action-adventure-template-02.png" alt="" /></a>
-								<h3>Action-Adventure Template</h3>
-								<span class="date"><b>April 22th, 2021</b></span>
-								<p>Collision has been set up but, it's still a bit finicky. If you collide and try to change direction, you will end up getting stuck.</p>
-								<ul class="actions">
-									<li><a href="game-boy-action-adventure-template-page.html" class="button">Learn More</a></li>
-								</ul>
-							</article>
-							<article>
-								<a href="game-boy-retro-jam-2021-page.html" class="image"><img src="images/game-boy/retro-jam-2021.png" alt="" /></a>
-								<h3>Retro Jam 2021</h3>
-								<span class="date"><b>March 12th, 2021</b></span>
-								<p>Logic was created in order to handle the animation changes when the player's state changed (example: jumping -> moving, moving -> shooting and vice versa).</p>
-								<ul class="actions">
-									<li><a href="game-boy-retro-jam-2021-page.html" class="button">Learn More</a></li>
-								</ul>
-							</article>
-							<article>
-								<a href="game-boy-rolling-on-page.html" class="image"><img src="images/game-boy/rolling-on.png" alt="" /></a>
-								<h3>Rolling On</h3>
-								<span class="date"><b>January 29th, 2021</b></span>
-								<p>Scene management - being able to keep track of the player and handling certain events at certain points during the game. Handling the scrolling background and display the correct area at the current moment.</p>
-								<ul class="actions">
-									<li><a href="game-boy-rolling-on-page.html" class="button">Learn More</a></li>
-								</ul>
-							</article>
-						</div>
+
+						<span class="date"><b>May 23rd, 2019</b></span>
+						<ul>
+							<li>Implemented an instance of pathfinding that will a raycast a point (red node) selected based on the mouse cursor.</li>
+							<li>Once a point has been chosen, this would create nodes around the object until a node reaches the selected target.</li>
+							<li>Afterwards, the node closest to the object would go through and figure out which node next to it, is the closest to the target.</li>
+							<li>The next node chosen would repeat the process while recording each node selected before, onto a list to be the path the object follows afterwards (nodes highlighted in blue).</li>
+						</ul>
+						
+						<span class="date"><b>May 20th, 2019</b></span>
+						<ul>
+							<li>An AI agent created can have different steering behaviors (flee/pursue/wander).</li>
+							<li>The flee and pursue agents can flee/pursue the pathfinding AI, or eachother.</li>
+							<li>These steering behaviors (expect the wandering behavior), would only be activated when the target is in the area.</li>
+							<li>If the target is not in the area, the agents would default back to their wandering behavior.</li>
+						</ul>
+
 					</section>
 
 				</div>
@@ -300,10 +363,8 @@
 						<p>Plus, if you would like to support me in my endevours...</p>
 						<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="alexisserna" data-color="#FF5F5F" data-emoji=""  data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 					</section>
-
 				</div>
 			</div>
-
 		</div>
 
 		<!-- Scripts -->
