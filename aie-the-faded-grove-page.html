@@ -132,12 +132,13 @@
 
 						<iframe width="100%" height="534" src="https://www.youtube.com/embed/2J8esEJj5T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-						<p>The final project I have gotten to work on from my enrollment at the Academy of Interactive Entertainment. What a journey it has been, when I've started out at AIE, I had almost no knowledge in coding/programming. I knew it was gonna be an uphill battle from the start, there were times where I was near the edge of not comp</p>
+						<p>The <b>final project</b> I have gotten to work on from my enrollment at the <b>Academy of Interactive Entertainment</b>. What a journey it has been, and getting the chance to work with a lovely group of people. My role for this project was as a <b>Audio/Game Programmer</b>. The main tasks for this role were handling logic to <b>handle the player (animator control, health, movement, etc.), to audio logic for the player, ceratin elements of the overall game, and some logic into a puzzle or two</b>.</p>
+						<p><b>On a more personal note</b>, when just starting out at AIE, I had <b>almost no knowledge in coding/programming</b>. It was gonna be an uphill battle from the start, there were times where I was near the edge of <b>failing the course</b>. But, if there is one thing learned from my enrollment at AIE, is that <b>I have what it takes</b>. Graduating from AIE and comparing how I started, and to see myself come so far, makes me feel proud of myself. To where the future takes me, I'm not sure, but <b>whatever life throws at me, I know I can succeed</b>!</p>
 
 						<hr class="major">
 
 						<header class="major">
-							<h2>Recent Updates</h2>
+							<h2>Contributions</h2>
 						</header>
 						
 						<!-- Section -->
@@ -145,17 +146,20 @@
 							<div class="container">
 								<div class="row gtr-150">
 									<div class="col-6 col-12-medium imp-medium">
-										<!-- Image -->
-										<img src="images/aie/artificial-intelligence-for-games.png" style="width:100%">
-										<img src="images/aie/artificial-intelligence-for-games-01.png" style="width:100%">
+										<!-- Video -->
+										<video style="width:100%;" height="100%" controls loop>
+											<source src="videos/aie/the-faded-grove-01.mp4" type="video/mp4">
+										</video>
 									</div>
 									<div class="col-6 col-12-medium">
-										<span class="date"><b>May 23rd, 2019</b></span>
+										<b>Audio/Music</b>
 										<ul>
-											<li>Implemented an instance of pathfinding that will a raycast a point (red node) selected based on the mouse cursor.</li>
-											<li>Once a point has been chosen, this would create nodes around the object until a node reaches the selected target.</li>
-											<li>Afterwards, the node closest to the object would go through and figure out which node next to it, is the closest to the target.</li>
-											<li>The next node chosen would repeat the process while recording each node selected before, onto a list to be the path the object follows afterwards (nodes highlighted in blue).</li>
+											<li>Custom audio logic with different functions, stop all audio attached to the script, play at different delays, play a selected clip, loop through a list of clips, or play a clip in a list on a case-by-case basis.</li>
+											<p></p>
+											<p>Examples</p> 
+											<li>Gaining/Losing health</li>
+											<li>Menu audio, clicking/hovering over options</li>
+											<li>Player attacking, movement and taking damage</li> 
 										</ul>
 									</div>
 								</div>
@@ -168,17 +172,40 @@
 								<div class="row gtr-150">
 									<div class="col-6 col-12-medium imp-medium">
 										<!-- Video -->
-										<video style="width:100%;" height="100%" muted controls loop>
-											<source src="videos/aie/artificial-intelligence-for-games-01.mp4" type="video/mp4">
+										<video style="width:100%;" height="100%" controls loop>
+											<source src="videos/aie/the-faded-grove-02.mp4" type="video/mp4">
 										</video>
 									</div>
 									<div class="col-6 col-12-medium">
-										<span class="date"><b>May 20th, 2019</b></span>
+										<b>Player</b>
 										<ul>
-											<li>An AI agent created can have different steering behaviors (flee/pursue/wander).</li>
-											<li>The flee and pursue agents can flee/pursue the pathfinding AI, or eachother.</li>
-											<li>These steering behaviors (expect the wandering behavior), would only be activated when the target is in the area.</li>
-											<li>If the target is not in the area, the agents would default back to their wandering behavior.</li>
+											<li>Logic to handle health system, player controller and animator controller.</li>
+											<p></p>
+											<p>Examples</p> 
+											<li>When the player has full health, taken damage, when to apply invincibility, and when to remove that as well.</li>
+											<li>How the player moves around in the scene, and when they interact with the pulling/push object.</li>
+											<li>Handling the animation states, when the player attacks, moves, pulls/pushes, and have taken damage.</li> 
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- Section -->
+						<section id="one" class="main style1">
+							<div class="container">
+								<div class="row gtr-150">
+									<div class="col-6 col-12-medium imp-medium">
+										<!-- Video -->
+										<video style="width:100%;" height="100%" controls loop>
+											<source src="videos/aie/the-faded-grove-03.mp4" type="video/mp4">
+										</video>
+									</div>
+									<div class="col-6 col-12-medium">
+										<b>Puzzle Mechanic (Pull/Push Block)</b>
+										<ul>
+											<li>Detecting based on which side the player is next to the block, and when the player is also facing the block, when they begin to pull/push, the block will move in the correct direction.</li>
+											<li>Accounting for the player to correcting the position/rotation to make sure when they begin to pull/push, their original positioning does not interfere with being able to complete the puzzle.</li>
 										</ul>
 									</div>
 								</div>
@@ -191,22 +218,66 @@
 							<h2>More Information</h2>
 						</header>
 
-						<h3>Download</h3>
+						<h3>Credits</h3>
 
-						<p>artificial-intelligence-for-games.zip <b>22.0 MB</b></p>
-
-						<ul class="actions">
-							<li><a href="https://github.com/ASGitH/aie-Artificial-Intelligence-For-Games/releases/download/build-00/artificial-intelligence-for-games.zip" class="button">Download</a></li>
+						<p>Alexis Serna - <b>Gameplay & Sound Programmer</b></p>
+						<p>Audrey Meyer - <b>Art Director, Rigger, Environment & Character FX artist</b></p>
+						<ul>
+							<li><a href="https://www.artstation.com/ochopika">ArtStation - Audrey Meyer</a></li>
+							<li class="icon brands style2 fa-linkedin"><a href="https://www.linkedin.com/in/audrey-meyer-162433120"> Audrey Meyer</a></li>
+						</ul>
+						<p>Elli-Aliisa Viljamaa - <b>Character & Concept Artist, Rigger, Animator</b></p>
+						<ul>
+							<li><a href="https://jellielli.artstation.com/">ArtStation - Elli-Aliisa Viljamaa</a></li>
+							<li class="icon brands style2 fa-linkedin"><a href="https://www.linkedin.com/in/elli-viljamaa"> Elli-Aliisa Viljamaa</a></li>
+						</ul>
+						<p>Erika Amos - <b>Character & Concept Artist</b></p>
+						<ul>
+							<li><a href="https://www.artstation.com/erikaamos">ArtStation - Erika Amos</a></li>
+							<li class="icon brands style2 fa-linkedin"><a href="https://www.linkedin.com/in/erikaamosdesign"> Erika Amos</a></li>
+						</ul>
+						<p>Joshua Livingston - <b>Level & Gameplay Desinger</b></p>
+						<ul>
+							<li class="icon brands style2 fa-linkedin"><a href="https://www.linkedin.com/in/josh-livingston"> Josh Livingston</a></li>
+						</ul>
+						<p>Joshua Yang - <b>Gameplay Systems Engineer, Build Engineer</b></p>
+						<ul>
+							<li class="icon brands style2 fa-github"><a href="https://github.com/joshy409"> joshy409</a></li>
+							<li class="icon brands style2 fa-linkedin"><a href="https://www.linkedin.com/in/joshy409"> Joshua B Yang</a></li>
+						</ul>
+						<p>Kylie Walker - <b>UX/UI Artist, Marketing Artist</b></p>
+						<ul>
+							<li><a href="https://kwalker_visuals.artstation.com">ArtStation - Kylie Walker</a></li>
+							<li class="icon brands style2 fa-linkedin"><a href="https://www.linkedin.com/in/kylie-walker"> Kylie Walker</a></li>
+							<li class="icon brands style2 fa-twitter"><a href="https://twitter.com/kwalker_visuals"> kwalker_visuals</a></li>
+						</ul>
+						<p>Marcel Dao - <b>AI Programming, FX</b></p>
+						<ul>
+							<li class="icon brands style2 fa-github"><a href="https://github.com/diammen"> diammen</a></li>
+							<li class="icon brands style2 fa-linkedin"><a href="https://www.linkedin.com/in/marceldao"> Marcel Dao</a></li>
+						</ul>
+						<p>Travis Benton - <b>Character & Concept Artist, Rigger, Animator</b></p>
+						<ul>
+							<li><a href="https://tbenton.artstation.com">ArtStation - Travis Benton</a></li>
+							<li class="icon brands style2 fa-linkedin"><a href="https://www.linkedin.com/in/travisbenton"> Travis Benton</a></li>
+							<li class="icon brands style2 fa-twitter"><a href="https://twitter.com/travisb_who"> travisb_who</a></li>
+						</ul>
+						<p>Xan Farley - <b>Producer, Narrative Designer</b></p>
+						<ul>
+							<li class="icon brands style2 fa-linkedin"><a href="https://www.linkedin.com/in/xan-farley-monolilith"> Xan Farley</a></li>
+							<li class="icon brands style2 fa-twitter"><a href="https://twitter.com/Lilithish"> Lilithish</a></li>
 						</ul>
 
-						<h3>Installation Instructions</h3>
-						<p>Download the .zip folder and <b>extract it. Launch the executable</b> (.exe).</p>
+						<h3>Disclaimer</h3>
 
-						<h3>Repository Link</h3>
-						<p><a href="https://github.com/ASGitH/aie-Artificial-Intelligence-For-Games">https://github.com/ASGitH/aie-Artificial-Intelligence-For-Games</a></p>
+						<p>All images/videos provided were not taken by myself, other group members were responsible for the media provided.</p>
 
-						<h3>Tools Used</h3>
-						<p>Game Engine - <a href="https://unity.com">Unity Game Engine</a></p>
+						<h3>Download</h3>
+
+						<p>To download, head to the itch.io link provided below</p>
+
+						<h3>itch.io Link</h3>
+						<p><a href="https://aieseattle.itch.io/fadedgrove">https://aieseattle.itch.io/fadedgrove</a></p>
 
 						<hr class="major" />
 
@@ -219,22 +290,32 @@
 							<div class="slideshow-container">
 
 							<div class="mySlides fade">
-								<img src="images/aie/artificial-intelligence-for-games.png" style="width:100%">
+								<img src="https://img.itch.zone/aW1hZ2UvNTcyMTA1LzM3NDgxNzEucG5n/794x1000/T3WCz9.png" style="width:100%">
 								<!-- <div class="text">Caption Two</div> -->
 							</div>
 
 							<div class="mySlides fade">
-								<img src="images/aie/artificial-intelligence-for-games-01.png" style="width:100%">
+								<img src="https://img.itch.zone/aW1nLzM3MDM5MjcuZ2lm/original/HbEohy.gif" style="width:100%">
+								<!-- <div class="text">Caption Two</div> -->
+							</div>
+
+							<div class="mySlides fade">
+								<img src="https://img.itch.zone/aW1hZ2UvNTcyMTA1LzM3MDM4NDkucG5n/794x1000/nSi6sB.png" style="width:100%">
 								<!-- <div class="text">Caption Two</div> -->
 							</div>
 							
 							<div class="mySlides fade">
-								<img src="images/aie/artificial-intelligence-for-games-02.png" style="width:100%">
+								<img src="https://img.itch.zone/aW1nLzM1NzMwNjAuZ2lm/original/Mgv27Y.gif" style="width:100%">
 								<!-- <div class="text">Caption Two</div> -->
 							</div>
 
 							<div class="mySlides fade">
-								<img src="images/aie/artificial-intelligence-for-games-03.png" style="width:100%">
+								<img src="https://img.itch.zone/aW1hZ2UvNTcyMTA1LzM3MDM4NTEucG5n/794x1000/HX1Ccs.png" style="width:100%">
+								<!-- <div class="text">Caption Two</div> -->
+							</div>
+
+							<div class="mySlides fade">
+								<img src="https://img.itch.zone/aW1hZ2UvNTcyMTA1LzM3MDM4NTAucG5n/794x1000/7rsdWL.png" style="width:100%">
 								<!-- <div class="text">Caption Two</div> -->
 							</div>
 
@@ -246,6 +327,8 @@
 								<span class="dot" onclick="currentSlide(2)"></span>
 								<span class="dot" onclick="currentSlide(3)"></span>
 								<span class="dot" onclick="currentSlide(4)"></span>
+								<span class="dot" onclick="currentSlide(5)"></span>
+								<span class="dot" onclick="currentSlide(6)"></span>
 							</div>
 
 							<script>
@@ -277,29 +360,6 @@
 							}
 							</script>
 						</section>
-
-						<hr class="major" />
-
-						<header class="major">
-							<h2>History</h2>
-						</header>
-
-						<span class="date"><b>May 23rd, 2019</b></span>
-						<ul>
-							<li>Implemented an instance of pathfinding that will a raycast a point (red node) selected based on the mouse cursor.</li>
-							<li>Once a point has been chosen, this would create nodes around the object until a node reaches the selected target.</li>
-							<li>Afterwards, the node closest to the object would go through and figure out which node next to it, is the closest to the target.</li>
-							<li>The next node chosen would repeat the process while recording each node selected before, onto a list to be the path the object follows afterwards (nodes highlighted in blue).</li>
-						</ul>
-						
-						<span class="date"><b>May 20th, 2019</b></span>
-						<ul>
-							<li>An AI agent created can have different steering behaviors (flee/pursue/wander).</li>
-							<li>The flee and pursue agents can flee/pursue the pathfinding AI, or eachother.</li>
-							<li>These steering behaviors (expect the wandering behavior), would only be activated when the target is in the area.</li>
-							<li>If the target is not in the area, the agents would default back to their wandering behavior.</li>
-						</ul>
-
 					</section>
 
 				</div>
